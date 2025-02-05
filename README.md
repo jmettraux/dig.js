@@ -11,7 +11,7 @@ D.ig(h, D.customer.name);
 let a = [ 1, 2, 3, { customer: 'surfdude' }, 'five' ];
 D.ig(a, D[3].customer) ?? 'noone';
   // => 'surfdude'
-D.ig(a, [3].user) ?? 'noone';
+D.ig(a, D[3].user) ?? 'noone';
   // => 'noone'
 ```
 
