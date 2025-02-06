@@ -1,0 +1,38 @@
+GIT
+  remote: https://github.com/floraison/probatio
+  revision: 1fac8aa65bee2319583caaa8c60e215215d14e1b
+  specs:
+    probatio (1.0.0)
+      colorato (~> 1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.8.7)
+      public_suffix (>= 2.0.2, < 7.0)
+    base64 (0.2.0)
+    colorato (1.1.0)
+    concurrent-ruby (1.3.5)
+    ferrum (0.16)
+      addressable (~> 2.5)
+      base64 (~> 0.2)
+      concurrent-ruby (~> 1.1)
+      webrick (~> 1.7)
+      websocket-driver (~> 0.7)
+    public_suffix (6.0.1)
+    webrick (1.9.1)
+    websocket-driver (0.7.7)
+      base64
+      websocket-extensions (>= 0.1.0)
+    websocket-extensions (0.1.5)
+
+PLATFORMS
+  ruby
+  x86_64-openbsd-7.6
+
+DEPENDENCIES
+  ferrum
+  probatio!
+
+BUNDLED WITH
+   2.6.2

@@ -6,6 +6,9 @@ chrome.core
 *.swp
 .vim*
 
+.probatio*
+.test-point
+
 .chat.md
 .openai.*.py
 .deep.md
