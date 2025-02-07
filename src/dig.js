@@ -15,7 +15,8 @@ window.D = function() {
     if (col === null || col === undefined) return col;
     if (Array.isArray(col)) return dig(col[ks[0]], ks.slice(1));
     if (typeof col === 'object') return dig(col[ks[0]], ks.slice(1));
-    return col;
+
+    return undefined;
   };
 
   let __makeDig = function(/* parent, name */) {
@@ -65,14 +66,4 @@ window.D = function() {
   };
 
   return __makeDig(); }();
-
-//let n = h[D.customer.name]; // would need valueOf() and more :-(
-//let n = D(h).customer.name;
-//let n = D.customer.name.from(h);
-//let n = D.customer.name.resolve(h);
-//let n = D(h, D.customer.name);
-//let n = D(h, e => e.customer.name);
-  //
-//let a = D.ig(h, D.customer.name);
-//let b = D.ig(a, D[1].name);
 
